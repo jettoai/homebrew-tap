@@ -4,6 +4,7 @@ Homebrew casks for jetto tools.
 
 ```bash
 brew tap jettoai/tap
+brew trust jettoai/tap   # Homebrew refuses third-party taps until you trust them
 brew install --cask cleat
 ```
 

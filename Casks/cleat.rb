@@ -7,7 +7,7 @@ cask "cleat" do
   desc "Keeps macOS audio devices where you declared them"
   homepage "https://github.com/jettoai/cleat"
 
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
 
   app "Cleat.app"
   # The app bundle is the CLI too: `cleat status` and `cleat log` are the same binary with a
