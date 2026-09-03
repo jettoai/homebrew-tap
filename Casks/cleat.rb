@@ -1,6 +1,6 @@
 cask "cleat" do
-  version "0.1.0"
-  sha256 "6a795ecd7520185d4d37ab78f9019e53bae5d903316e8bac4b4f0ca833c13a9f"
+  version "0.1.1"
+  sha256 "94d3c55a11c6131c7afb019bc518e20636bed52256a35ce55e41a1d3543130ab"
 
   url "https://github.com/jettoai/cleat/releases/download/v#{version}/Cleat-#{version}.zip"
   name "Cleat"
