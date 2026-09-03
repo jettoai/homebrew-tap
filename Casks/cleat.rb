@@ -4,7 +4,7 @@ cask "cleat" do
 
   url "https://github.com/jettoai/cleat/releases/download/v#{version}/Cleat-#{version}.zip"
   name "Cleat"
-  desc "Keeps macOS audio devices where you declared them"
+  desc "Keeps audio devices where you declared them"
   homepage "https://github.com/jettoai/cleat"
 
   depends_on macos: :sonoma
