@@ -1,6 +1,6 @@
 cask "cleat" do
-  version "0.3.11"
-  sha256 "e0beee7d079bd98b70a55f529377b449d11f81e3216d8ba7216597ff1dd29028"
+  version "0.4.0"
+  sha256 "12d3244c306f97d753b5cbe7ee1414904ebf79805c41e8e494959eef4445990c"
 
   url "https://github.com/jettoai/cleat/releases/download/v#{version}/Cleat-#{version}.zip"
   name "Cleat"
@@ -37,6 +37,8 @@ cask "cleat" do
 
   zap trash: [
     "~/Library/Application Support/Cleat",
+    # Left by the Sentry SDK of the Swift builds (0.3.x); the Rust build writes nothing here.
+    "~/Library/Caches/ai.jetto.cleat",
     "~/Library/Logs/Cleat",
   ]
 end
