@@ -1,8 +1,8 @@
 # Template for the cask that ships in jettoai/homebrew-tap. `version` and `sha256` come from
 # rs/scripts/build-release.sh, which prints both after notarizing.
 cask "cleat" do
-  version "0.4.2"
-  sha256 "7220012bc1fb2a3cdfdcbea38bbc34402ef99cc109cd334d6b8bba323cbac403"
+  version "0.4.3"
+  sha256 "1ad1b0ab32121fe012cca4890feee0e5b024eb6167af0c736f0886cf803ea8d9"
 
   url "https://github.com/jettoai/cleat/releases/download/v#{version}/Cleat-#{version}.zip"
   name "Cleat"
@@ -36,6 +36,12 @@ cask "cleat" do
                      must_succeed: false
     end
   end
+
+  caveats <<~EOS
+    Cleat sends an anonymous usage ping about once a day (a random device ID, the Cleat version
+    and the product name) so the author can count installs. To turn it off, set
+    "usagePing": false in ~/.config/cleat/config.json.
+  EOS
 
   zap trash: [
     "~/Library/Application Support/Cleat",
